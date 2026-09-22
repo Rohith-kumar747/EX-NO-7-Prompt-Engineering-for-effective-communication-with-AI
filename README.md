@@ -1,82 +1,80 @@
-# EX-NO-7-Prompt-Engineering-for-effective-communication-with-AI
-## AIM
-The main purpose of prompt engineering is to guide artificial intelligence models to produce accurate, relevant, and useful outputs by designing clear and structured instructions. Prompt engineering is the process of structuring an instruction so an AI model gives an accurate and useful response
-### GOALS OF PROMPT ENGINEERING
-•	Improve Accuracy: Reduce errors and wrong facts (hallucinations) by giving the AI precise context and rules.
-•	Control Tone and Format: Ensure the AI replies in a specific style, length, or layout (like bullet points, JSON code, or a friendly voice).
-•	Handle Complex Tasks: Break hard problems into smaller steps using methods like chain-of-thought reasoning.
-•	Bridge Vague Inputs: Help everyday user requests turn into structured, actionable commands that an AI application can actually process. 
+# exp_7_measurement_and_analysis_of_a_magic_tee
 
-## PROMPTING TECHNIQUES
-1. Zero-Shot Prompting
-You give the AI a direct task or question with no background examples, relying entirely on its pre-trained knowledge.
-Example:
-“Summarize this article in three bullet points.”
-2. Few-Shot Prompting
-You provide a small number of input-output examples inside the prompt to teach the AI the exact pattern, tone, or style you want. One-shot uses a single example, while multi-shot uses several.
-Example:
-“Here are two examples of friendly email replies. Write a third reply in the same style.”
-3. Chain-of-Thought (CoT) Prompting
-You ask the model to break down complex reasoning into intermediate steps before giving a final answer, which improves accuracy in math or logic.
-Example:
-“Think step by step to solve this math problem.”
-4. Role-Based Prompting
-You assign the AI a specific persona, job title, or perspective to control its expertise, tone, and vocabulary.
-Example:
-“Act as an experienced financial advisor.”
-5. Instruction-Based Prompting
-You use clear, explicit commands with action verbs to outline constraints, formats, and rules without needing examples.
-Example:
-“Write a product description under 50 words using a professional tone.”
-### ESSENTIAL PROMPT TECHNIQUES
-•	Context Framing: Set clear roles, target audiences, specific tones, and exact output formats.
-•	Advanced Prompting: Apply few-shot learning with examples and use chain-of-thought logic for complex problem-solving.
-•	Parameter Tuning: Adjust model settings like temperature and top-p values to control creativity and predictability.
-PRACTICE PROMPTS AND SEE THE OUTPUTS
-FOR DOCUMENTS
-•	\Visualizelearning
-•	\generatehandwrittenimage 
-•	\sticky-notes
-•	\teacher
-•	\doctor
-•	\lawyer
-•	\ideas10<Your Research field>
-### QUESTIONS
-•	Explain [TOPIC]like I’m a beginner
-•	Give me 10 ideas for [Goal]
-•	Write a professional[TYPE]for [Audience]
-•	Improve this text and plan for[Goal]
-•	Create a step-by-step plan for [Goal]
-### FOR IMAGES
+# Experiment 7 — Measurement and Analysis of a Magic Tee
+---
 
-•  /underwater — Underwater scene 
-•  /pencilsketch — Pencil drawing 
-•  /goldenhour — Golden hour lighting 
-•  /lowpoly — Low-poly 3D 
-•  /wildlife — Wildlife photography 
-•  /cinematicphoto — Movie-like photography 
-•  /interior — Interior design visualization 
-•  /anime — Anime artwork 
-•  /macrophotо — Macro photography 
-•  /oilpainting — Oil painting style 
-•  /droneview — Drone aerial shot 
-•  /blackandwhite — Monochrome style 
-•  /pixelart — Pixel art 
-•  /architecturephoto — Architectural photography 
-•  /hyperrealistic — Extreme realism 
+## Aim
 
-### APPLICATION PROMPTS
+To measure the isolation between the E and H arms of a magic tee and study the characteristics of the magic tee.
 
-1, "I want you to act as a travel guide. I will write you my location and you will suggest a place to visit near my location. In some cases, I will also give you the type of places I will visit. You will also suggest me places of similar type that are close to my first location. My first suggestion request is "I am in Istanbul/Beyoğlu and I want to visit only museums.""<TRAVEL>
-2., "I'm looking for a [type of email] that will speak directly to the needs and pain points of my [ideal customer persona] and persuade them to take [desired action] with a sense of urgency and strong offer."<EMAIL MARKETING>
-3.“I want you to act as a storyteller. You will come up with entertaining stories that are engaging, imaginative and captivating for the audience. It can be fairy tales, educational stories or any other type of stories which has the potential to capture people's attention and imagination. Depending on the target audience, you may choose specific themes or topics for your storytelling session e.g., if it’s children then you can talk about animals; If it’s adults then history-based tales might engage them better etc. My first request is "I need an interesting story on perseverance.”
-<STORY TELLING>
+## Apparatus Used
 
-### CORE TAKEAWAYS
+Klystron power supply, klystron mount, isolator, attenuator, frequency meter, VSWR meter, magic tee and matched terminations.
 
-•	Clarity matters: Specific instructions and explicit constraints prevent vague or off-target responses.
-•	Cost-effective optimization: Adjusting prompts is the fastest and cheapest way to improve output quality without retraining models.
-•	Advanced techniques: Methods like chain-of-thought and role assignments help guide logical reasoning and formatting
+## Experimental Setup
 
-## CONCLUSION
-In conclusion, prompt engineering serves as the essential communication bridge that bridges human intent and machine understanding to maximize the performance of artificial intelligence. Prompt engineering is important because it directly controls the quality, accuracy, and relevance of outputs from artificial intelligence. Traditional prompt engineering is largely obsolete, but the core discipline has evolved into context engineering and system architecture design. 
+<img width="863" height="215" alt="image" src="https://github.com/user-attachments/assets/ffa30dc6-d64e-4042-b5bd-a7d08833dc7c" />
+
+
+---
+
+## Theory
+
+A four-port junction combining an E-plane and an H-plane tee is called a **hybrid tee**. When matching elements are introduced to reduce reflections it becomes a **magic tee**.
+
+<img width="438" height="357" alt="image" src="https://github.com/user-attachments/assets/96c95d2e-d089-4a01-b7c8-d79df4788936" />
+
+
+The arm forming an H-plane tee with the collinear arms is the **H-arm** (shunt arm); the arm forming an E-plane tee with them is the **E-arm** (series arm). The shunt and series arms are polarised — the voltage vectors in the two arms are perpendicular — so as long as nothing in the junction rotates the polarisation there can be no coupling between them. Posts and irises match the E and H arms to minimise reflections from these two ports.
+
+The "magic" lies in how power divides among the arms:
+
+* A signal fed into the shunt (H) arm divides equally and **in phase** into the two side arms, with no coupling to the E-arm.
+* A signal fed into the series (E) arm also divides equally into the two side arms, but the halves are **180° out of phase**, with no coupling to the H-arm.
+* Power fed into one side arm divides equally into the shunt and series arms with no coupling to the other side arm.
+
+That is, **opposite arms of a magic tee are isolated**. The magic tee can also be used as a signal combiner: signals fed into both side arms combine in phase at the H-arm and 180° out of phase at the E-arm.
+
+A magic tee is normally characterised by two quantities:
+
+1. **Isolation between E and H arms** — with power P_E flowing into the E-arm and P_H flowing out of the H-arm (both collinear arms match-terminated):
+
+   ```
+   Isolation (dB) = −10 log₁₀ (P_H / P_E)
+   ```
+
+2. **Power division in the collinear arms** — the power fed into either the E or H arm should divide equally between the side arms when the opposite port is match-terminated. With P_C1 and P_C2 the side-arm powers:
+
+   ```
+   Coupling (dB) = −10 log₁₀ (P_C1 / P_H) = −10 log₁₀ (P_C2 / P_H)
+   ```
+
+---
+
+## Procedure
+
+
+1. Set up the equipment as shown in Figure.
+2. Keep the control knobs of the klystron power supply as follows:
+
+   | Control | Setting |
+   |---|---|
+   | Mode switch | AM |
+   | Beam voltage knob | Fully anti-clockwise |
+   | Repeller voltage knob | Fully clockwise |
+   | Meter switch | Cathode voltage position |
+3. Measure the values from the VSWR meter for E-Arm and H-Arm as input port.
+
+## Observation (Measurement of isolation between E and H arms)
+
+<img width="900" height="1600" alt="image" src="https://github.com/user-attachments/assets/f0021b7f-162a-4224-9536-47eac34e95d2" />
+
+
+## Precautions
+
+* Check the connections before switching on the kit.
+* Make all connections properly.
+* Take the observations carefully.
+
+## Conclusion
+The Magic Tee was studied successfully and its working principle was understood. It combines the properties of E-plane and H-plane tees and provides isolation between the two input arms. The experiment demonstrates the use of Magic Tee as a microwave power divider/combiner and for signal isolation and impedance matching in microwave systems.
